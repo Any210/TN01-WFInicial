@@ -28,90 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            textBox1 = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            textBox2 = new TextBox();
-            label3 = new Label();
-            textBox3 = new TextBox();
+            txtNum3 = new TextBox();
+            lblNum3 = new Label();
+            txtNum2 = new TextBox();
+            lblNum2 = new Label();
+            txtNum1 = new TextBox();
+            lblNum1 = new Label();
+            btnMaiorEMenor = new Button();
             SuspendLayout();
             // 
-            // button1
+            // txtNum3
             // 
-            button1.Location = new Point(220, 175);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            txtNum3.Location = new Point(395, 222);
+            txtNum3.Name = "txtNum3";
+            txtNum3.Size = new Size(100, 23);
+            txtNum3.TabIndex = 13;
             // 
-            // textBox1
+            // lblNum3
             // 
-            textBox1.Location = new Point(241, 46);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 1;
-            textBox1.TextChanged += this.textBox1_TextChanged;
+            lblNum3.AutoSize = true;
+            lblNum3.Location = new Point(305, 222);
+            lblNum3.Name = "lblNum3";
+            lblNum3.Size = new Size(63, 15);
+            lblNum3.TabIndex = 12;
+            lblNum3.Text = "Número 3:";
             // 
-            // label1
+            // txtNum2
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(182, 46);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 2;
-            label1.Text = "label1";
-            label1.Click += this.label1_Click;
+            txtNum2.Location = new Point(395, 190);
+            txtNum2.Name = "txtNum2";
+            txtNum2.Size = new Size(100, 23);
+            txtNum2.TabIndex = 11;
             // 
-            // label2
+            // lblNum2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(182, 87);
-            label2.Name = "label2";
-            label2.Size = new Size(38, 15);
-            label2.TabIndex = 4;
-            label2.Text = "label2";
-            label2.Click += this.label2_Click;
+            lblNum2.AutoSize = true;
+            lblNum2.Location = new Point(305, 193);
+            lblNum2.Name = "lblNum2";
+            lblNum2.Size = new Size(63, 15);
+            lblNum2.TabIndex = 10;
+            lblNum2.Text = "Número 2:";
             // 
-            // textBox2
+            // txtNum1
             // 
-            textBox2.Location = new Point(241, 87);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 3;
-            textBox2.TextChanged += textBox2_TextChanged;
+            txtNum1.Location = new Point(395, 161);
+            txtNum1.Name = "txtNum1";
+            txtNum1.Size = new Size(100, 23);
+            txtNum1.TabIndex = 9;
             // 
-            // label3
+            // lblNum1
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(182, 133);
-            label3.Name = "label3";
-            label3.Size = new Size(38, 15);
-            label3.TabIndex = 6;
-            label3.Text = "label3";
-            label3.Click += this.label3_Click;
+            lblNum1.AutoSize = true;
+            lblNum1.Location = new Point(305, 162);
+            lblNum1.Name = "lblNum1";
+            lblNum1.Size = new Size(63, 15);
+            lblNum1.TabIndex = 8;
+            lblNum1.Text = "Número 1:";
             // 
-            // textBox3
+            // btnMaiorEMenor
             // 
-            textBox3.Location = new Point(241, 133);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 5;
-            textBox3.TextChanged += this.textBox3_TextChanged;
+            btnMaiorEMenor.Location = new Point(350, 266);
+            btnMaiorEMenor.Name = "btnMaiorEMenor";
+            btnMaiorEMenor.Size = new Size(145, 23);
+            btnMaiorEMenor.TabIndex = 7;
+            btnMaiorEMenor.Text = "Número Maior e Menor";
+            btnMaiorEMenor.UseVisualStyleBackColor = true;
+            btnMaiorEMenor.Click += btnMaiorEMenor_Click;
             // 
             // FormEx5
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label3);
-            Controls.Add(textBox3);
-            Controls.Add(label2);
-            Controls.Add(textBox2);
-            Controls.Add(label1);
-            Controls.Add(textBox1);
-            Controls.Add(button1);
+            Controls.Add(txtNum3);
+            Controls.Add(lblNum3);
+            Controls.Add(txtNum2);
+            Controls.Add(lblNum2);
+            Controls.Add(txtNum1);
+            Controls.Add(lblNum1);
+            Controls.Add(btnMaiorEMenor);
             Name = "FormEx5";
             Text = "FormEx5";
             ResumeLayout(false);
@@ -120,12 +115,12 @@
 
         #endregion
 
-        private Button button1;
-        private TextBox textBox1;
-        private Label label1;
-        private Label label2;
-        private TextBox textBox2;
-        private Label label3;
-        private TextBox textBox3;
+        private TextBox txtNum3;
+        private Label lblNum3;
+        private TextBox txtNum2;
+        private Label lblNum2;
+        private TextBox txtNum1;
+        private Label lblNum1;
+        private Button btnMaiorEMenor;
     }
 }
