@@ -44,12 +44,12 @@ namespace WFInicial
                     break;
 
                 case 6:
-                    MessageBox.Show("Sabado");
+                    MessageBox.Show("Sexta - feira");
                     break;
 
 
                 case 7:
-                    MessageBox.Show("Sexta - feira");
+                    MessageBox.Show("Sabado");
                     break;
 
                 default:
