@@ -16,5 +16,19 @@ namespace WFInicial
         {
             InitializeComponent();
         }
+
+        
+
+        private void btnCalcule_Click(object sender, EventArgs e)
+        {
+            string nome = txtNome.Text;
+            double valorHora = Convert.ToDouble(txtValor.Text);
+            int quantHoras = Convert.ToInt32(txtQuant.Text);
+            double resultado = valorHora * quantHoras;
+
+            string mensagem = $"A renda total de {nome} é  R$ {resultado:F2}";
+
+            MessageBox.Show(mensagem, "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

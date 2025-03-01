@@ -28,53 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtNum3 = new TextBox();
-            lblNum3 = new Label();
-            txtNum2 = new TextBox();
+            txtValor = new TextBox();
+            lblValor = new Label();
+            txtQuant = new TextBox();
             lblQuant = new Label();
-            txtNum1 = new TextBox();
+            txtNome = new TextBox();
             lblNome = new Label();
-            btnMaiorEMenor = new Button();
+            btnCalcule = new Button();
             SuspendLayout();
             // 
-            // txtNum3
+            // txtValor
             // 
-            txtNum3.Location = new Point(395, 222);
-            txtNum3.Name = "txtNum3";
-            txtNum3.Size = new Size(100, 23);
-            txtNum3.TabIndex = 20;
+            txtValor.Location = new Point(518, 222);
+            txtValor.Name = "txtValor";
+            txtValor.Size = new Size(100, 23);
+            txtValor.TabIndex = 20;
             // 
-            // lblNum3
+            // lblValor
             // 
-            lblNum3.AutoSize = true;
-            lblNum3.Location = new Point(305, 222);
-            lblNum3.Name = "lblNum3";
-            lblNum3.Size = new Size(63, 15);
-            lblNum3.TabIndex = 19;
-            lblNum3.Text = "Número 3:";
+            lblValor.AutoSize = true;
+            lblValor.Location = new Point(305, 222);
+            lblValor.Name = "lblValor";
+            lblValor.Size = new Size(141, 15);
+            lblValor.TabIndex = 19;
+            lblValor.Text = "Valor da Hora Trabalhada:";
             // 
-            // txtNum2
+            // txtQuant
             // 
-            txtNum2.Location = new Point(395, 190);
-            txtNum2.Name = "txtNum2";
-            txtNum2.Size = new Size(100, 23);
-            txtNum2.TabIndex = 18;
+            txtQuant.Location = new Point(518, 190);
+            txtQuant.Name = "txtQuant";
+            txtQuant.Size = new Size(100, 23);
+            txtQuant.TabIndex = 18;
             // 
             // lblQuant
             // 
             lblQuant.AutoSize = true;
-            lblQuant.Location = new Point(305, 193);
+            lblQuant.Location = new Point(305, 190);
             lblQuant.Name = "lblQuant";
             lblQuant.Size = new Size(187, 15);
             lblQuant.TabIndex = 17;
             lblQuant.Text = "Quantidade de Horas Trabalhadas:";
             // 
-            // txtNum1
+            // txtNome
             // 
-            txtNum1.Location = new Point(395, 161);
-            txtNum1.Name = "txtNum1";
-            txtNum1.Size = new Size(100, 23);
-            txtNum1.TabIndex = 16;
+            txtNome.Location = new Point(518, 161);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(100, 23);
+            txtNome.TabIndex = 16;
             // 
             // lblNome
             // 
@@ -85,27 +85,28 @@
             lblNome.TabIndex = 15;
             lblNome.Text = "Nome:";
             // 
-            // btnMaiorEMenor
+            // btnCalcule
             // 
-            btnMaiorEMenor.Location = new Point(350, 266);
-            btnMaiorEMenor.Name = "btnMaiorEMenor";
-            btnMaiorEMenor.Size = new Size(145, 23);
-            btnMaiorEMenor.TabIndex = 14;
-            btnMaiorEMenor.Text = "Número Maior e Menor";
-            btnMaiorEMenor.UseVisualStyleBackColor = true;
+            btnCalcule.Location = new Point(350, 266);
+            btnCalcule.Name = "btnCalcule";
+            btnCalcule.Size = new Size(145, 23);
+            btnCalcule.TabIndex = 14;
+            btnCalcule.Text = "Calcule";
+            btnCalcule.UseVisualStyleBackColor = true;
+            btnCalcule.Click += btnCalcule_Click;
             // 
             // FormEx6
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(txtNum3);
-            Controls.Add(lblNum3);
-            Controls.Add(txtNum2);
+            Controls.Add(txtValor);
+            Controls.Add(lblValor);
+            Controls.Add(txtQuant);
             Controls.Add(lblQuant);
-            Controls.Add(txtNum1);
+            Controls.Add(txtNome);
             Controls.Add(lblNome);
-            Controls.Add(btnMaiorEMenor);
+            Controls.Add(btnCalcule);
             Name = "FormEx6";
             Text = "FormEx6";
             ResumeLayout(false);
@@ -114,12 +115,12 @@
 
         #endregion
 
-        private TextBox txtNum3;
-        private Label lblNum3;
-        private TextBox txtNum2;
+        private TextBox txtValor;
+        private Label lblValor;
+        private TextBox txtQuant;
         private Label lblQuant;
-        private TextBox txtNum1;
+        private TextBox txtNome;
         private Label lblNome;
-        private Button btnMaiorEMenor;
+        private Button btnCalcule;
     }
 }
