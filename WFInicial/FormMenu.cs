@@ -71,13 +71,13 @@ namespace WFInicial
             formEx9.ShowDialog();
         }
 
-        /*private void btnEx10_Click(object sender, EventArgs e)
+        private void btnEx10_Click(object sender, EventArgs e)
         {
             FormEx10 formEx10 = new FormEx10();
             formEx10.ShowDialog();
         }
 
-        private void btnEx11_Click(object sender, EventArgs e)
+        /*private void btnEx11_Click(object sender, EventArgs e)
         {
             FormEx11 formEx11 = new FormEx11();
             formEx11.ShowDialog();
